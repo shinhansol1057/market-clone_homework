@@ -1,0 +1,43 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.bt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px ;
+}
+
+.bt img{
+  width: 30px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.bt-msg {
+  background-color: white;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding: 0 10px 0 10px;
+}
+
+.bt-msg input {
+  width: 80%;
+  border: none;
+}
+
+.bt-msg input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.bt-msg input:focus {
+  outline:none;
+}
