@@ -1,5 +1,5 @@
 footer {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #e5e5e5;
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -15,7 +15,7 @@ footer {
 .bt img{
   width: 30px;
   opacity: 0.3;
-  cursor: pointer;
+  
 }
 
 .bt-msg {
@@ -40,4 +40,10 @@ footer {
 
 .bt-msg input:focus {
   outline:none;
+}
+
+.bt-send {
+  border: none;
+  background-color: #e5e5e5;
+  cursor: pointer;
 }

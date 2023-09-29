@@ -1,4 +1,6 @@
-
+main {
+  margin-bottom: 100px;
+}
 /* item 부분 */
 .item {
   display: flex;
@@ -33,6 +35,8 @@
   padding: 10px;
   margin-left: 3px;
   max-width: 300px;
+  box-sizing: content-box;
+  word-break:break-all;
 }
 
 .chat-right__time {

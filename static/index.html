@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>당근채팅</title>
   <link rel="stylesheet" href="CSS/style.css">
   <style>
     
@@ -47,28 +47,31 @@
       </div>
     </div>
 
-    <div class="chat">
-      <div class="chat-right">
-        <div class="chat-right__msg">
-          오늘 시민공원 근처에서 7시에 가능하신가요?
+    <div>
+      <div id="new-chat" class="chat">
+        <div class="chat-right">
+          <div class="chat-right__msg">
+            오늘 시민공원 근처에서 7시에 가능하신가요?
+          </div>
+          <div class="chat-right__time">
+            <div>오후 3:45</div>
+          </div>
         </div>
-        <div class="chat-right__time">
-          <div>오후 3:45</div>
-        </div>
-      </div>
-      <div class="chat-left">
-        <div class="chat-left__img">
-          <img src="assets/user.svg" alt="user">
-        </div>
-        <div class="chat-left__msg">
-          네 가능해요 그때 봐요!
-        </div>
-        <div class="chat-left__time">
-          <div>
-            오후 3:45
+        <div class="chat-left">
+          <div class="chat-left__img">
+            <img src="assets/user.svg" alt="user">
+          </div>
+          <div class="chat-left__msg">
+            네 가능해요 그때 봐요!
+          </div>
+          <div class="chat-left__time">
+            <div>
+              오후 3:45
+            </div>
           </div>
         </div>
       </div>
+      
       <div class="chat-rsv">
         <div class="chat-rsv__date">
           <div class="chat-rsv__date-img">
@@ -79,7 +82,7 @@
           </div>
         </div>
         <div class="chat-rsv__msg">
-          슬기망님이 거래 약속을 설정했어요.
+          슬기맘님이 거래 약속을 설정했어요.
         </div>
       </div>
       <div class="chat-last">
@@ -91,18 +94,19 @@
   </main>
 
   <footer>
-    <div class="bt">
-      <div class="bt-plus">
-        <img src="assets/plus.svg" alt="plus">
-      </div>
-      <div class="bt-msg">
-        <input type="text" placeholder="메세지를 입력하세요.">
-        <img src="assets/emoticon.svg" alt="emoticon">
-      </div>
-      <div class="bt-send">
-        <img src="assets/send.svg" alt="">
-      </div>
-    </div>
+      <form id="chat-form" class="bt">
+        <div class="bt-plus">
+          <img src="assets/plus.svg" alt="plus">
+        </div>
+        <div class="bt-msg">
+          <input type="text" id="chat-input" placeholder="메세지를 입력하세요.">
+          <img src="assets/emoticon.svg" alt="emoticon">
+        </div>
+        <button class="bt-send">
+          <img src="assets/send.svg" alt="send">
+        </button>
+      </form>
   </footer>
+  <script src="JS/app.js"></script>
 </body>
 </html>
